@@ -1,0 +1,1 @@
+By adding a new rule to /etc/hosts to reroute 42.fr to 46.19.122.85 and by also making sure the nfs.config queries the etc/hosts before checking DNS
