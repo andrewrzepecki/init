@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "user to delete: ";
+read user;
+
+ret=$(cat /etc/passwd | grep "$user")
+null=''
+if [$ret == $null]
+then
+	echo "Connot find user";
+then
+
+fi

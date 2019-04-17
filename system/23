@@ -1,0 +1,2 @@
+In graphical session you must use follow the instruction on the UI for changing users, by logging out or swtiching the current user logged on.
+Via SSH, you can use the 'su' command followed by the desired user to change user as long as you have the password and correct username.
