@@ -5,5 +5,5 @@ if [ "$username" = "$ROOTUSER_NAME" ]
 then
 	echo "Rooty, toot, toot. You are root."
 else
-	echo "You are just a regular fella."
+	echo "You are just a regular fella (but mom loves you just the same)."
 fi
