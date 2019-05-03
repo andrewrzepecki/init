@@ -1,13 +1,11 @@
-#!/bin/bash
+#/bin/bash
 
 echo "user to delete: ";
 read user;
-
-ret=$(cat /etc/passwd | grep "$user")
-null=''
-if [$ret == $null]
+user_exists=$(getent passwd $user)
+if [ -z "$user_exists"];
 then
-	echo "Connot find user";
-then
-
+	echo "Connot find user $user";
+else
+	sudo userdel -rfRZ $user && echo "$user deleted"
 fi
