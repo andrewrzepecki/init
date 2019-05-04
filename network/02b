@@ -1,1 +1,1 @@
-arp -a | grep 42.fr | cut -d ' ' -f2 | sed "s/)//g" | sed "s/(//g"
+ping `ifconfig | grep broadcast | cut -b 47-` | arp -a | grep 42.fr | cut -d ' ' -f2 | sed "s/)//g" | sed "s/(//g"
